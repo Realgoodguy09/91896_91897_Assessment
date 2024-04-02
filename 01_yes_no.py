@@ -6,10 +6,10 @@ print()
 
 # function will go here
 
-# checks user enters a valid response
+
 def yes_no(question):
 
-
+    # checks user enters a valid response
     while True:
         response = input(question).lower()
 
