@@ -1,5 +1,31 @@
-# funtion goes here
-def shape_chooser(question):
+# blanks for space between each test
+print()
+print()
+print()
+print()
+print()
+
+# yes_no function for testing purposes
+def yes_no(question):
+
+    # checks user enters a valid response
+    while True:
+        response = input(question).lower()
+
+        # if answer is yes, returns yes
+        if response == 'yes' or response == 'y':
+            return 'yes'
+
+        # if answer is no, returns no
+        elif response == 'no' or response == 'n':
+            return 'no'
+
+        # loops and asks for a valid response
+        else:
+            print("Please enter yes / no")
+
+# main funtion for development goes here
+def ask_shape(question):
     # get the shape the user wants
 
     while True:
@@ -28,8 +54,17 @@ def shape_chooser(question):
 
 
 # main routine goes here
-print("Please pick a shape")
 
-shape = shape_chooser("Shape: ")
+while True:
+    shape = ask_shape("Please pick a shape. ")
 
-print("you have chosen a {}".format(shape))
+    confirm_shape = yes_no("Do you wish to calculate a {}? ".format(shape))
+    
+    
+    if confirm_shape == "yes":
+        break
+
+    else:
+        print("Returning to slection...")
+
+print("continuing...")
