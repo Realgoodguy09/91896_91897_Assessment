@@ -1,2 +1,6 @@
-print("Hi")
-print("Cheese")
+# functions go here
+
+
+
+
+# main routine goes you
