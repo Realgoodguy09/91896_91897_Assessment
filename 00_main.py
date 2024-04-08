@@ -55,4 +55,4 @@ while True:
         print("valid shapes are... circle, square, rectangle, triangle, parallelogram, and trapezium.")
         print()
         print()
-        print("you will then be asked for the needed values, such as the length, width, height and such.")
+        print("you will then be asked for the needed values, such as the length, width, height etc.")
