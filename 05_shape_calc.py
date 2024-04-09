@@ -1,8 +1,9 @@
 # function goes here
-def square_area(length):
+def area(sides):
 
     area = (length*length)
-    return area
+    area = float(area)
+    return area 
 
 
 # main routine goes here

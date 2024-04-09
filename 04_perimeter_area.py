@@ -22,4 +22,4 @@ def peri_area(question):
             return "both"
         
         else:
-            print("Please enter a valid response.")
+            print("Please enter a valid response (perimeter / area).")
