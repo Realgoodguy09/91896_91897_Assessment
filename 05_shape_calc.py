@@ -1,5 +1,5 @@
 # function goes here
-def area(sides):
+def area(length):
 
     area = (length*length)
     area = float(area)
@@ -9,6 +9,6 @@ def area(sides):
 # main routine goes here
 
 
-area = square_area(int(input("Length: ")))
+area1 = area(int(input("Length: ")))
 
 print("the area is {}".format(area))
