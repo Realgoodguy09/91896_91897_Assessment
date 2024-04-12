@@ -1,4 +1,8 @@
 def area(sides):
 
     while True:
-        v1 = float(input("What is the length? "))
+        v1 = int(input("What is the length? "))
+        if v1 == int:
+            continue
+        else:
+            print("Please enter a number.")
