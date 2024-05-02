@@ -18,8 +18,5 @@ def peri_area(question):
         elif response == "area":
             return "area"
         
-        elif response == "both":
-            return "both"
-        
         else:
             print("Please enter a valid response (perimeter / area).")

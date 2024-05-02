@@ -58,7 +58,7 @@ def ask_shape(question):
 while True:
     shape = ask_shape("Please pick a shape. ")
 
-    confirm_shape = yes_no("Do you wish to calculate a {}? ".format(shape))
+    confirm_shape = yes_no("Do you wish to select {}? ".format(shape))
     
     
     if confirm_shape == "yes":
