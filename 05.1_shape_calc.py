@@ -6,3 +6,8 @@ def area(sides):
             continue
         else:
             print("Please enter a number.")
+
+
+n1 = 5
+
+print(n1/n1)

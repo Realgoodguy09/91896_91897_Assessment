@@ -28,15 +28,28 @@ def ask_shape(question):
 
 
 # gets the values needed for each shape
-def get_value(sides):
+def get_value_area(sides):
+
+    try:
+        if shape == "square":
+            n1 = float(input("length: "))
 
 
-    if shape == "square":
-        v1 = float(input("length: "))
+        elif shape == "retangle":
+            n1 = float(input("length: "))
+            n2 = float(input("width: "))
 
-    elif shape == "retangle":
-        v1 = float(input("length: "))
-        v2 = float(input("width: "))
+        elif shape == "triangle" or "parallelogram":
+            n1 = float(input("base: "))
+            n2 = float(input("height: "))
+        
+        elif shape == "trapezium":
+            n1 = float(input("side 1: "))
+            n2 = float(input("side 2: "))
+            n3 = float(input("height: "))
+        elif shape == "circle":
+            n1 = float(input("radius: "))
 
-    elif shape == "triangle":
-        v1 = float(input())
+    except ValueError:
+        print("Invalid input. Please enter a number.")
+
