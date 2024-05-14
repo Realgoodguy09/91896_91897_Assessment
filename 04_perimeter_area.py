@@ -10,12 +10,12 @@ def peri_area(question):
 
 
     while True:
-        response = input(question).lower()
+        operation = input(question).lower()
 
-        if response == "perimeter":
+        if operation == "perimeter":
             return "perimeter"
         
-        elif response == "area":
+        elif operation == "area":
             return "area"
         
         else:

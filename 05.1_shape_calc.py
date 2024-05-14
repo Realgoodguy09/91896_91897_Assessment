@@ -10,4 +10,4 @@ def area(sides):
 
 n1 = 5
 
-print(n1/n1)
+print(n1+n1)
