@@ -22,23 +22,26 @@ def shape_calc_area(question):
     while True:
         shape = input(question).lower()
         try:
+
+            # code to find square area
             if shape == "1":
                 n1 = float(input("length: "))
                 area = (n1*n1)
-                return area
-
+                
+                
+            # Code to find area of rectangle
             elif shape == "2":
                 n1 = float(input("length: "))
                 n2 = float(input("width: "))
                 area = (n1*n2)
-                return area
+                
             elif shape == "3":
                 n1 = float(input("base: "))
                 n2 = float(input("height: "))
             
             
             elif shape == "4":
-
+                
                 n1 = float(input("radius: "))
 
 
@@ -52,6 +55,7 @@ def shape_calc_area(question):
                 n1 = float(input("side 1: "))
                 n2 = float(input("side 2: "))
                 n3 = float(input("height: "))
+                area = ((n1+n2)/2*n3)
 
 
             else:
@@ -59,7 +63,17 @@ def shape_calc_area(question):
 
         except ValueError:
             print("Invalid input. Please enter a number.")
+
+        print()
+        print()
+        print("Area = {}".format(area))
+        print()
+        print()
             
+print()
+print()
+print()
+print()
 
 print("Select Shape.")
 print("1.Square")
@@ -70,4 +84,3 @@ print("5.Parallelogram")
 print("6.Trapezium")
 area = shape_calc_area("Enter choice(1/2/3/4/5/6): ")
 
-print(area)
