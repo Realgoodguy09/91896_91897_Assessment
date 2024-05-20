@@ -1,61 +1,58 @@
-# Asks user if 
-def peri_area(question):
-
-
-    while True:
-        operation = input(question).lower()
-
-        if operation == "perimeter":
-            return "perimeter"
-        
-        elif operation == "area":
-            return "area"
-        
-        else:
-            print("Please enter a valid response (perimeter / area).")
-
-
+def askshape():
+    print("Select Shape.")
+    print("1.Square")
+    print("2.Rectangle")
+    print("3.Triangle")
+    print("4.Circle")
+    print("5.Parallelogram")
+    print("6.Trapezium")
 
 def shape_calc_area(question):
     
 
     while True:
-        shape = input(question).lower()
         try:
-
+            
+            print()
+            print()
+            print()
+            shape = input(question).lower()
+        
             # code to find square area
             if shape == "1":
                 n1 = float(input("length: "))
-                area = (n1*n1)
+                print("Area = ", n1*n1)
                 
                 
             # Code to find area of rectangle
             elif shape == "2":
                 n1 = float(input("length: "))
                 n2 = float(input("width: "))
-                area = (n1*n2)
+                print("Area = ", n1*n2)
                 
+            # Calculate area of a triangle
             elif shape == "3":
                 n1 = float(input("base: "))
                 n2 = float(input("height: "))
+                print("Area = ", n1*n2)
             
-            
+            # Calculate area of a circle
             elif shape == "4":
                 
                 n1 = float(input("radius: "))
 
-
+            # Calculates area of a paralellogram
             elif shape == "5":
                 n1 = float(input("base: "))
                 n2 = float(input("height: "))
-                area = (n1*n2)
+                print("Area = " , n1*n2)
 
-            
+            # Calculates area of a trapezium
             elif shape == "6":
                 n1 = float(input("side 1: "))
                 n2 = float(input("side 2: "))
                 n3 = float(input("height: "))
-                area = ((n1+n2)/2*n3)
+                print("Area = ", (n1+n2)/2*n3)
 
 
             else:
@@ -63,24 +60,20 @@ def shape_calc_area(question):
 
         except ValueError:
             print("Invalid input. Please enter a number.")
+            continue
 
-        print()
-        print()
-        print("Area = {}".format(area))
-        print()
-        print()
-            
+        break
+        
+
+
+calc_question = "Enter choice(1/2/3/4/5/6): "
+
+
 print()
 print()
 print()
 print()
 
-print("Select Shape.")
-print("1.Square")
-print("2.Rectangle")
-print("3.Triangle")
-print("4.Circle")
-print("5.Parallelogram")
-print("6.Trapezium")
-area = shape_calc_area("Enter choice(1/2/3/4/5/6): ")
+askshape()
+area = shape_calc_area(calc_question)
 
