@@ -22,19 +22,20 @@ def shape_calc_peri(question):
                 
             # Calculate area of a triangle
             elif shape == "3":
-                n1 = float(input("base: "))
-                n2 = float(input("height: "))
-                print("Area = ", n1*n2)
+                n1 = float(input("side 1: "))
+                n2 = float(input("side 2: "))
+                n3 = float(input("side 2: "))
+                print("Perimeter = ", n1+n2+n3)
             
             # Calculate area of a circle
             elif shape == "4":
                 
                 n1 = float(input("radius: "))
 
-            # Calculates area of a paralellogram
+            # Calculates area of a parallelogram
             elif shape == "5":
                 n1 = float(input("base: "))
-                n2 = float(input("height: "))
+                n2 = float(input("side: "))
                 print("Area = " , n1*n2)
 
             # Calculates area of a trapezium

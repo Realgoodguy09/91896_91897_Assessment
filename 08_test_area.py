@@ -7,6 +7,7 @@ def askshape():
     print("5.Parallelogram")
     print("6.Trapezium")
 
+# function that contains code to find the area of each shape
 def shape_calc_area(question):
     
 
@@ -34,14 +35,33 @@ def shape_calc_area(question):
             elif shape == "3":
                 n1 = float(input("base: "))
                 n2 = float(input("height: "))
-                print("Area = ", n1*n2)
+                print("Area = ", (n1*n2)/2)
             
             # Calculate area of a circle
             elif shape == "4":
-                
-                n1 = float(input("radius: "))
 
-            # Calculates area of a paralellogram
+                pi = 3.14159265359
+                # Asks user what value they have between radius and diameter
+                data = input("Please enter the data you have(radius/diameter): ").lower()
+
+                while True:
+                    if data == "radius":
+                        n1 = float(input("radius: "))
+                        break
+
+
+                    elif data == "diameter":
+                        n0 = float(input("diameter: "))
+                        n1 = n0/2
+                        break
+
+                                    
+                    else:
+                        print("invalid response.")
+
+                print("Area = ", n1*pi)
+
+            # Calculates area of a parallelogram
             elif shape == "5":
                 n1 = float(input("base: "))
                 n2 = float(input("height: "))
