@@ -29,8 +29,29 @@ def shape_calc_peri(question):
             
             # Calculate area of a circle
             elif shape == "4":
-                
-                n1 = float(input("radius: "))
+
+                # the value of pi used for calculations
+                pi = 3.14159265359
+
+                while True:
+                    data = input("Please enter the data you have(radius/diameter): ").lower()
+
+                    if data == "radius":
+                        n1 = float(input("radius: "))
+                        break
+
+
+                    elif data == "diameter":
+                        n0 = float(input("diameter: "))
+                        n1 = n0/2
+                        break
+
+                                    
+                    else:
+                        print("invalid response.")
+
+                print("Perimeter = ", 2*pi*n1)
+
 
             # Calculates area of a parallelogram
             elif shape == "5":

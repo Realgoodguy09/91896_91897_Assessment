@@ -40,11 +40,13 @@ def shape_calc_area(question):
             # Calculate area of a circle
             elif shape == "4":
 
+                # the value of pi used for calculations
                 pi = 3.14159265359
                 # Asks user what value they have between radius and diameter
-                data = input("Please enter the data you have(radius/diameter): ").lower()
-
+                
                 while True:
+                    data = input("Please enter the data you have(radius/diameter): ").lower()
+
                     if data == "radius":
                         n1 = float(input("radius: "))
                         break
@@ -59,7 +61,7 @@ def shape_calc_area(question):
                     else:
                         print("invalid response.")
 
-                print("Area = ", n1*pi)
+                print("Area = ", (n1*n1)*pi)
 
             # Calculates area of a parallelogram
             elif shape == "5":
