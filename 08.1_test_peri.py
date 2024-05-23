@@ -57,7 +57,7 @@ def shape_calc_peri(question):
             elif shape == "5":
                 n1 = float(input("base: "))
                 n2 = float(input("side: "))
-                print("Area = " , n1*n2)
+                print("Area = " , 2*(n1+n2))
 
             # Calculates area of a trapezium
             elif shape == "6":
@@ -66,12 +66,17 @@ def shape_calc_peri(question):
                 n3 = float(input("height: "))
                 print("Area = ", (n1+n2)/2*n3)
 
-
+            # Loops if response is invalid
             else:
                 print("Please enter a valid choice. ")
 
+        # ensure the code doesn't break if user doesn't respond with a number for the values
         except ValueError:
             print("Invalid input. Please enter a number.")
             continue
 
         break
+
+
+
+
