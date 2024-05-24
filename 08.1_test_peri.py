@@ -34,14 +34,14 @@ def shape_calc_peri(question):
                 pi = 3.14159265359
 
                 while True:
-                    data = input("Please enter the data you have(radius/diameter): ").lower()
+                    data = input("Please enter the data you have(radius(r)/diameter(d)): ").lower()
 
-                    if data == "radius":
+                    if data == "radius" or data == "r":
                         n1 = float(input("radius: "))
                         break
 
 
-                    elif data == "diameter":
+                    elif data == "diameter" or data == "d":
                         n0 = float(input("diameter: "))
                         n1 = n0/2
                         break
@@ -57,13 +57,14 @@ def shape_calc_peri(question):
             elif shape == "5":
                 n1 = float(input("base: "))
                 n2 = float(input("side: "))
-                print("Area = " , 2*(n1+n2))
+                print("Perimeter = " , 2*(n1+n2))
 
             # Calculates area of a trapezium
             elif shape == "6":
-                n1 = float(input("side 1: "))
-                n2 = float(input("side 2: "))
-                n3 = float(input("height: "))
+                n1 = float(input("base 1: "))
+                n2 = float(input("base 2: "))
+                n3 = float(input("side 1: "))
+                n4 = float(input("side 1: "))
                 print("Area = ", (n1+n2)/2*n3)
 
             # Loops if response is invalid

@@ -12,11 +12,11 @@ def peri_area(question):
     while True:
         operation = input(question).lower()
 
-        if operation == "perimeter":
+        if operation == "perimeter" or operation == "p":
             return "perimeter"
         
-        elif operation == "area":
+        elif operation == "area" or operation == "a":
             return "area"
         
         else:
-            print("Please enter a valid response (perimeter / area).")
+            print("Please enter a valid response (perimeter(p) / area(a)).")
