@@ -1,3 +1,14 @@
+def askshape():
+    print("Select Shape.")
+    print("1.Square")
+    print("2.Rectangle")
+    print("3.Triangle")
+    print("4.Circle")
+    print("5.Parallelogram")
+    print("6.Trapezium")
+
+
+
 def shape_calc_peri(question):
     
     while True:
@@ -65,7 +76,7 @@ def shape_calc_peri(question):
                 n2 = float(input("base 2: "))
                 n3 = float(input("side 1: "))
                 n4 = float(input("side 1: "))
-                print("Area = ", (n1+n2)/2*n3)
+                print("Perimeter = ", n1+n2+n3+n4)
 
             # Loops if response is invalid
             else:
@@ -81,3 +92,13 @@ def shape_calc_peri(question):
 
 
 
+calc_question = "Enter choice(1/2/3/4/5/6): "
+
+
+print()
+print()
+print()
+print()
+
+askshape()
+perimeter = shape_calc_peri(calc_question)
