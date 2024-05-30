@@ -17,8 +17,7 @@ def shape_calc_area(question):
     while True:
         try:
             
-            print()
-            print()
+
             print()
             shape = input(question).lower()
         
@@ -95,8 +94,7 @@ def shape_calc_peri(question):
     while True:
         try:
             
-            print()
-            print()
+
             print()
             shape = input(question).lower()
         
@@ -198,7 +196,7 @@ calc_question = "Enter choice(1/2/3/4/5/6): "
 
 while True:
 
-    operation = peri_area("Please select operation.(perimeter(p) / area(a))")
+    operation = peri_area("Please select operation.(perimeter(p) / area(a)): ")
 
 
     if operation == "area":
@@ -210,3 +208,4 @@ while True:
          
         askshape()
         perimeter = shape_calc_peri(calc_question)
+        
