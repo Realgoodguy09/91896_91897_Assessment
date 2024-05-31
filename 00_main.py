@@ -187,6 +187,13 @@ def peri_area(question):
         else:
             print("Please enter a valid response (perimeter(p) / area(a)).")
 
+# function to end code
+def end(question):
+    
+    end = input(question).lower()
+
+    if end == "no" or end == "n":
+        quit()
 
 
 # Variables
@@ -202,10 +209,12 @@ while True:
     if operation == "area":
         askshape()
         area = shape_calc_area(calc_question)
+        end("Continue to next calculation? (yes / no) ")
 
 
     elif operation == "perimeter":
          
         askshape()
         perimeter = shape_calc_peri(calc_question)
+        end("Continue to next calculation? (yes / no) ")
         

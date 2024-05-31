@@ -5,6 +5,5 @@ def end(question):
     if end == "yes" or end == "y":
         quit()
 
-    else:
-        print()
+
     
