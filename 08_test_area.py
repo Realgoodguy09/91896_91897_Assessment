@@ -80,6 +80,7 @@ def shape_calc_area(question):
             else:
                 print("Please enter a valid choice. ")
 
+        # if user enters wrong data code loops and doesn't break
         except ValueError:
             print("Invalid input. Please enter a number.")
             continue

@@ -10,34 +10,34 @@ def askshape():
 
 
 def shape_calc_peri(question):
-    
+
     while True:
         try:
-            
+
             print()
             print()
             print()
             shape = input(question).lower()
-        
+
             # code to find square area
             if shape == "1":
                 n1 = float(input("length: "))
                 print("Perimeter = ", n1*4)
-                
-                
+
+
             # Code to find area of rectangle
             elif shape == "2":
                 n1 = float(input("length: "))
                 n2 = float(input("width: "))
                 print("Perimeter = ", (n1*2)+(n2*2))
-                
+
             # Calculate area of a triangle
             elif shape == "3":
                 n1 = float(input("side 1: "))
                 n2 = float(input("side 2: "))
                 n3 = float(input("side 2: "))
                 print("Perimeter = ", n1+n2+n3)
-            
+
             # Calculate area of a circle
             elif shape == "4":
 
@@ -45,7 +45,7 @@ def shape_calc_peri(question):
                 pi = 3.14159265359
 
                 while True:
-                    data = input("Please enter the data you have(radius(r)/diameter(d)): ").lower()
+                    data = input("do you have radius(r) / diameter(d): ").lower()
 
                     if data == "radius" or data == "r":
                         n1 = float(input("radius: "))
@@ -57,7 +57,7 @@ def shape_calc_peri(question):
                         n1 = n0/2
                         break
 
-                                    
+   
                     else:
                         print("invalid response.")
 
@@ -82,7 +82,7 @@ def shape_calc_peri(question):
             else:
                 print("Please enter a valid choice. ")
 
-        # ensure the code doesn't break if user doesn't respond with a number for the values
+        # if user enters wrong data code loops and doesn't break
         except ValueError:
             print("Invalid input. Please enter a number.")
             continue
