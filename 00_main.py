@@ -52,12 +52,12 @@ def shape_calc_area(question):
                 while True:
                     data = input("Please enter your data type. radius(r)/diameter(d): ").lower()
 
-                    if data == "radius":
+                    if data == "radius" or data == "r":
                         n1 = float(input("radius: "))
                         break
 
 
-                    elif data == "diameter":
+                    elif data == "diameter" or data == "d":
                         n0 = float(input("diameter: "))
                         n1 = n0/2
                         break
@@ -122,7 +122,7 @@ def shape_calc_peri(question):
             elif shape == "3":
                 n1 = float(input("side 1: "))
                 n2 = float(input("side 2: "))
-                n3 = float(input("side 2: "))
+                n3 = float(input("side 3: "))
                 print("Perimeter = ", n1+n2+n3)
                 break
             
@@ -200,11 +200,18 @@ def peri_area(question):
 
 # function to end code
 def end(question):
-    
-    end = input(question).lower()
 
-    if end == "no" or end == "n":
-        return "no"
+    while True:
+        end = input(question).lower()
+
+        if end == "no" or end == "n":
+            return "no"
+        
+        elif end == "yes" or end == "y":
+            return "yes"
+        
+        else:
+            print("Invalid response.")
 
 
 # Variables
@@ -226,11 +233,11 @@ while True:
             quit()
 
     elif operation == "perimeter":
-         
+        
         askshape()
         perimeter = shape_calc_peri(calc_question)
         end("Continue to next calculation? (yes / no) ")
         if end == "no":
             quit()
 
-        
+    
